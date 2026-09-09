@@ -1,0 +1,135 @@
+
+ <section class="custom-banner" id="CustomBanner-{{ section.id }}">
+  <div class="custom-banner__inner">
+
+    {% if section.settings.eyebrow != blank %}
+      <div class="custom-banner__red-box">
+        {{ section.settings.eyebrow }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h1 class="custom-banner__heading">
+        {{ section.settings.heading }}
+      </h1>
+    {% endif %} 
+    
+    {% if section.settings.description != blank %}
+      <div class="custom-banner__description">
+        {{ section.settings.description }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.button_text != blank %}
+      <a
+        class="custom-banner__button"
+        href="{{ section.settings.button_link }}"
+      >
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+  #CustomBanner-{{ section.id }} {
+    width: 100%;
+  }
+
+  #CustomBanner-{{ section.id }} .custom-banner__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    text-align: center;
+  }
+
+   #CustomBanner-{{ section.id }} .custom-banner__red-box {
+    display: inline-block;
+    background: #ff0000;
+    color: #ffffff;
+    padding: 8px 14px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+   }
+
+  #CustomBanner-{{ section.id }} .custom-banner__heading {
+    margin: 0 auto 20px;
+    font-size: clamp(42px, 7vw, 90px);
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  #CustomBanner-{{ section.id }} .custom-banner__description {
+    max-width: 600px;
+    margin: 0 auto 28px;
+    line-height: 1.5;
+  }
+
+  #CustomBanner-{{ section.id }} .custom-banner__button {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 14px 30px;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+  }
+
+  #CustomBanner-{{ section.id }} .custom-banner__button:hover {
+    transform: scale(1.08);
+  }
+
+  @media screen and (max-width: 749px) {
+    #CustomBanner-{{ section.id }} .custom-banner__inner {
+      padding: 35px 16px;
+    }
+
+    #CustomBanner-{{ section.id }} .custom-banner__heading {
+      font-size: 42px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "TISSO VISION"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Gift Guide"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Discover the perfect gift for everyone on your list."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Banner"
+    }
+  ]
+}
+{% endschema %}
+

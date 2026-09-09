@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "custom_banner": {
+      "type": "custom-banner",
+      "settings": {}
+    },
+    "custom_product_grid": {
+      "type": "custom-product-grid",
+      "blocks": {
+        "product_1": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_2": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_3": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_4": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_5": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_6": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_1",
+        "product_2",
+        "product_3",
+        "product_4",
+        "product_5",
+        "product_6"
+      ],
+      "settings": {
+        "jacket_product": ""
+      }
+    }
+  },
+  "order": [
+    "custom_banner",
+    "custom_product_grid"
+  ]
+}
