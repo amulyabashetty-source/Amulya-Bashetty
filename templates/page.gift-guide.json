@@ -22,10 +22,12 @@
             "alignment": "left",
             "type_preset": "h2",
             "font": "var(--font-body--family)",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -38,7 +40,9 @@
         },
         "page-content": {
           "type": "page-content",
-          "settings": {},
+          "settings": {
+            "text_color": ""
+          },
           "blocks": {}
         }
       },
@@ -53,9 +57,75 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "custom_banner_zKfCpk": {
+      "type": "custom-banner",
+      "name": "Custom Banner",
+      "settings": {
+        "eyebrow": "TISSO VISION",
+        "heading": "The Gift Guide",
+        "description": "Discover the perfect gift for everyone on your list.",
+        "button_text": "SHOP NOW",
+        "button_link": ""
+      }
+    },
+    "custom_product_grid_qKDW7m": {
+      "type": "custom-product-grid",
+      "blocks": {
+        "product_tVR3Ht": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_8eXd7T": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_GnrQhA": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_dPUt9j": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_fwCbzF": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_e8a4Yk": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_tVR3Ht",
+        "product_8eXd7T",
+        "product_GnrQhA",
+        "product_dPUt9j",
+        "product_fwCbzF",
+        "product_e8a4Yk"
+      ],
+      "name": "Custom Product Grid",
+      "settings": {
+        "jacket_product": "dark-winter-jacket"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_banner_zKfCpk",
+    "custom_product_grid_qKDW7m"
   ]
 }
