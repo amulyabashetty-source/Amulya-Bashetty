@@ -72,13 +72,13 @@
     "custom_product_grid_qKDW7m": {
       "type": "custom-product-grid",
       "blocks": {
-        "product_tVR3Ht": {
+        "product_8eXd7T": {
           "type": "product",
           "settings": {
             "product": ""
           }
         },
-        "product_8eXd7T": {
+        "product_tVR3Ht": {
           "type": "product",
           "settings": {
             "product": ""
@@ -110,8 +110,8 @@
         }
       },
       "block_order": [
-        "product_tVR3Ht",
         "product_8eXd7T",
+        "product_tVR3Ht",
         "product_GnrQhA",
         "product_dPUt9j",
         "product_fwCbzF",
